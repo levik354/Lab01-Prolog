@@ -26,3 +26,6 @@ escala(X,Y):- vuelo(X,Z), vuelo(Z,Y).
 viaje(X,Y):- vuelo(X,Y).
 % Caso2: escala
 viaje(X,Y):- vuelo(X,Z), vuelo(Z,Y).
+
+%Vuelo de doble direccion.
+retorno(X,Y):- vuelo(X,Y), vuelo(Y,X).
